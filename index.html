@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="cards.css">
+    <title>Página legalzinha</title>
+</head>
+<body>
+    <div class="formulario">
+      <div class="texto1">
+        <h1>Formulário</h1>
+        <p>Preencha com a informação requerida, por favor ^u^</p></div>
+        <form method="post" action=''>
+          <fieldset>
+            <label for="first-name">Nome: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Apellido: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">Senha: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+          </fieldset>
+          <fieldset>
+            <label for="botao"><input id="personal-account" type="radio" name="account-type" class="inline b" />Botão</label>
+            <label for="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Eu concordo que <a href="https://lelivros.digital/">esse site</a> é legal
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="profile-picture">Insira foto: <input id="profile-picture" type="file" name="file" /></label>
+            <label for="age">Qual a nota que você dá para o site? <input id="age" type="number" name="age" min="13" max="120" /></label>
+            <label for="referrer">Qual seu favorito?
+              <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Cinnamonroll</option>
+                <option value="2">Kuromi</option>
+                <option value="3"> Hello Kitty </option>
+                <option value="4">My Melody</option>
+                <option value="5"> Keropi </option>
+              </select>
+            </label>
+            <label for="bio">Faça seu comentário:
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu só digo uma coisa: Não digo nada."></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    <div class="imagens">
+
+    <main class="image-slider">
+      <button class="btn-seta btn-voltar" id="btn-voltar">
+        <img class="c" src="Img/cinnamon-walk.jpeg" alt="Cinnamonroll walking to the left." align="middle" />
+      </button>
+      
+    <ul class="lista-personagens">
+
+      <li class="cartao selecionado fundo-1">
+        <div class="informacoes">
+          <h2 class="nome">Miku</h2>
+          <p class="vida">Vocaloid</p>
+        </div>
+
+        <div class="container-imagem">
+          <img src="Img/miku.jpg" alt="Miku" class="imagem-personagens"/>
+        </div>
+          <li class="cartao selecionado fundo-2">
+            <div class="informacoes">
+              <h2 class="nome">Una</h2>
+              <p class="vida">Vocaloid</p>
+            </div>
+
+            <div class="container-imagem">
+              <img src="Img/una.jpg" alt="Una" class="imagem-personagens"/>
+            </div>
+
+              <li class="cartao selecionado fundo-3">
+                <div class="informacoes">
+                  <h2 class="nome">Rin</h2>
+                  <p class="vida">Vocaloid</p>
+                </div> 
+                <div class="container-imagem">
+                  <img src="Img/rin-black-dress.jpg" alt="Rin" class="imagem-personagens"/>
+                </div>
+                
+              <li class="cartao selecionado fundo-4">
+                <div class="informacoes">
+                  <h2 class="nome"> Anya </h2>
+                  <p class="vida"> Telepata</p>
+                </div>
+                <div class="container-imagem">
+                  <img src="Img/anya-sit.jpg" alt="Anya" class="imagem-personagens"/>
+              </div>
+              <li class="cartao selecionado fundo-5">
+                <div class="informacoes">
+                  <h2 class="nome"> Miku </h2>
+                  <p class="vida"> Vocaloid</p>
+                </div>
+                <div class="container-imagem">
+                  <img src="Img/miku-down-hair.jpg" alt="Miku" class="imagem-personagens"/>
+              </div>
+              <li class="cartao selecionado fundo-6">
+                <div class="informacoes">
+                  <h2 class="nome"> Rin </h2>
+                  <p class="vida"> Vocaloid</p>
+                </div>
+                <div class="container-imagem">
+                  <img src="Img/rin-cabelao.jpg" alt="Rin" class="imagem-personagens"/>
+                </div>
+              </ul>
+
+        <div>
+        <button class="btn-seta btn-avancar" id="btn-avancar">
+        <img class="c" src="Img/cinnamon-walk.jpeg" alt="Cinnamonroll walking to the right." />
+        </button></div>
+      </main>
+
+      <script src="js.js"></script>  
+    </div>
+    <div class="placeholder"></div>
+</body>
+<footer>
+<p class="texto2">Todas as imagens utilizadas pertencem a seus respectivos donos.</p>
+</footer>
+</html>
